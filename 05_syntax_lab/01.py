@@ -1,5 +1,9 @@
 """
-Write a program that reads 10 numbers from
-the user and prints the largest one
+receive 10 numbers and print the largest of them
 """
-
+max = int(raw_input())
+for i in range (9):
+    b = int(raw_input())
+    if b > max:
+        max = b
+print "Largest number is:", max
