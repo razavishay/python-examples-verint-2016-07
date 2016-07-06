@@ -1,4 +1,4 @@
-""" Write a program that takes a count
-from sys.argv import and prints "Hello Python"
-count times
-"""
+import sys
+userInput = int(sys.argv[1])
+for i in range (1, userInput+1):
+    print "Hello Python"
