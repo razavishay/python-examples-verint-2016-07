@@ -1,7 +1,7 @@
-"""
-Write a function that takes two arguments: 
-    A string
-    And a number
-If wrong types were passed in, raise an exception
-"""
-
+def checktypes (num, string):
+    if type(num) <> int:
+        raise Exception ("First argument must be int")
+    elif type(string) <> str:
+        raise Exception ("Second argument must be string")
+    else:
+        print "Argument check passed."
