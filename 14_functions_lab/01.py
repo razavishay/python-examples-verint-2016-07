@@ -1,7 +1,14 @@
-"""
-Write 2 functions:
-    mysum - returns the sum of its input arguments
-    mymul - returns the multiplication of its input arguments
-    Ignore non-numeric arguments
-"""
+def SumNumbers (list):
+    s = 0
+    for i in list:
+        if type(i) == int:
+            s += i
+    return s
+
+def MultiplyNumbers (list):
+    m=1
+    for i in list:
+        if type(i) == int:
+            m *= i
+    return m
 
