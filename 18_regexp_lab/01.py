@@ -1,12 +1,12 @@
-"""
-Write a program that reads data
-from property files.
-Each line in the file can either be:
-    An empty line
-    A comment line (Start with #)
-    A property line (of the form key = value)
+import sys
+import re
 
-Write a program that takes a property file name and key
-as command line arguments and prints the requested value
-"""
+filename = sys.argv[1]
+key = sys.argv[2]
+with open(filename, 'r') as f:
+    for line in f:
+        r = re.search(r'^(\w+)\s*=\s*(\w+)', line)
+        if r is not None and r.groups()[0] == key:
+            print r.groups()[1]
+            
 
