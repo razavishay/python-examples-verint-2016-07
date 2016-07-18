@@ -1,6 +1,9 @@
-"""
-The following code assumes a class
-named Summer exists. 
-Complete the class so correct result is printed
-"""
+class Summer(object):
+    def __init__(self, val = 0):
+        self.sum = val
+    def add(self, *vals):
+        for val in vals:
+            self.sum += val
+    def total (self):
+        return self.sum
 
